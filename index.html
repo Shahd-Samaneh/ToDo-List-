@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="icon" href="images/to-do-list.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css" />
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="screen-top  flex-row">
+            <div class="content flex-col">
+                <h2>Hello!</h2>
+                <p>Today you have <span class="tasks-number">0</span> tasks</p>
+            </div>
+            <div class="avatar">
+                <img src="images/woman.png" />
+            </div>
+        </div>
+        <div class="screen-bottom flex-col">
+            <div class="todo-list">
+                <ul class="list flex-col">
+                </ul>
+            </div>
+            <div class="task-add">
+                <i class="add-btn fa-solid fa-circle-plus fa-2xl" style="color: #1f3a5f;"></i>
+            </div>
+            <div class="black-backdrop"></div>
+            <div class="task flex-col">
+                <h2 class="task-header">Add Task</h2>
+                <input class="add-task-input" type="text" id="ftask" name="ftask"><br>
+                <input class="task-btn" type="submit" value="Add">
+            </div>
+              <div class="edit flex-col">
+                <h2 class="task-header">Edit Task</h2>
+                <input class="edit-task-input" type="text" id="edit-task" name="ftask"><br>
+                <input class="edit-btn" type="submit" value="Edit">
+            </div>
+        </div>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
